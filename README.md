@@ -1,85 +1,56 @@
-# Analysis of employee dismissal factors
-# 📊 Employee Productivity and Resignation Analysis
 
-An analytical project aimed at exploring the factors influencing employee resignations based on a real-world HR dataset.
+# 💼 Employee Attrition Analysis
 
----
+This project focuses on understanding employee attrition using HR analytics data from IBM.  
+We analyze key factors that contribute to employees leaving the company, such as:
 
-## 🎯 Project Objectives
+- Job satisfaction
+- Work-life balance
+- Department
+- Gender
+- Monthly income
+- Promotion 
 
-- Identify the main reasons behind employee resignations.
-- Compare key characteristics between resigned and retained employees.
-- Create visualizations to present the analysis results clearly.
-- Perform data cleaning and quality assessment before analysis.
-
----
-
-## 🛠 Technologies Used
-
-- Python 3.12
-- Pandas
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
-- Visual Studio Code
+The dataset used is from [IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset).
 
 ---
 
-## 🔍 Analysis Overview
+## 📊 Visual Insights
 
-- Data cleaning: handling missing values, removing duplicates, checking for unrealistic data points.
-- Analyzing resignation rates by gender, department, and education level.
-- Comparing average salary, overtime hours, and employee satisfaction between groups.
-- Visualizing insights using Barplots, Boxplots, and Heatmaps.
-- Investigating the relationship between satisfaction scores and resignation status.
+### 📌 Attrition Rate by Department
+![Attrition by Department](images/attrition_by_department_custom_colors.png)
 
----
+### 📌 Attrition by Job Satisfaction and Gender
+![Attrition by Job Satisfaction](images/job_satisfaction_attrition.png)
 
-## 📈 Key Findings
+### 📌 Attrition by Promotion in Last 2 Years
+![Attrition by Promotion](images/years_since_last_promotion.png)
 
-- The highest resignation rate was observed in the `Customer Support` department.
-- Employees who resigned generally had lower satisfaction scores.
-- High overtime hours and lower salaries correlated with increased resignation probability.
-- Lack of career advancement (promotions) appeared to be a significant factor for resignations.
+### 📌 Attrition Distribution Face Plot
+![Face Plot](images/output.png)
 
----
 
-## 🚀 How to Run the Project
+## 🧠 Key Findings
 
-1. Clone the repository:
-https://github.com/melo4yxa77796/EmployeeProductivityAnalysis.git
-2. Install the required libraries:
-pip install pandas matplotlib seaborn
-3. Open and run `Employee_Resignation_Analysis.ipynb` in Jupyter Notebook.
+- Departments like **Sales** have the highest attrition rates.
+- Employees with **low job satisfaction** or **poor work-life balance** are more likely to leave.
+- **Lower monthly income** is strongly associated with higher attrition.
+- **Employees who were not promoted in the last 2 years** have a significantly higher attrition rate.
+- There are subtle differences in attrition patterns between **genders**.
 
----
 
-## 📸 Sample Visualizations
+## 📂 Project Structure
 
-3. Open and run `Employee_Resignation_Analysis.ipynb` in Jupyter Notebook.
+- `notebooks/` — analysis and visualizations in Jupyter
+- `images/` — saved PNG charts for easy embedding
+- `data/` — cleaned dataset
+- `README.md` — project overview
 
 ---
 
-## 📸 Sample Visualizations
+## 🚀 How to Run
 
-
-## 📸 Sample Visualizations
-
-### Distribution of Satisfaction Score by Resignation Status
-![Satisfaction Boxplot](https://github.com/melo4yxa77796/EmployeeProductivityAnalysis/blob/main/Screenshot%202025-04-27%20at%2011.36.43.png)
-
-### Resignation Rates by Department
-![Department Resignation Barplot](https://github.com/melo4yxa77796/EmployeeProductivityAnalysis/blob/main/Screenshot%202025-04-27%20at%2011.37.08.png)
-
-### Correlation Heatmap of Key Features
-![Correlation Heatmap](https://github.com/melo4yxa77796/EmployeeProductivityAnalysis/blob/main/Screenshot%202025-04-27%20at%2011.39.01.png)
-
----
-
-## 📬 Contact
-
-Author: [yuliia kotenko]  
-Email: [melo4yxa77796@gmail.com]
-
----
-
+```bash
+git clone https://github.com/melo4yxa77796/EmployeeProductivityAnalysis.git
+cd EmployeeProductivityAnalysis
+open notebooks/attrition_analysis.ipynb
